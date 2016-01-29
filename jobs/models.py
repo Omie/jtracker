@@ -30,4 +30,6 @@ class JobUpdate(models.Model):
     update = models.TextField(max_length=1024)
     updated_on = models.DateTimeField(auto_now_add=True)
 
+    def __unicode__(self):
+        return self.update
 
